@@ -16,10 +16,6 @@
   * [Resources](#resources)
   
   
-## Demo
-Link: [https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/blob/master/demo%20video.mp4](https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/blob/master/demo%20video.mp4)
-
-
 ## Overview
 This is a simple image classification project trained on the top of Keras/Tensorflow API with MobileNetV2 deep neural network architecture having weights considered as pre-trained 'imagenet' weights. The trained model (`mask-detector-model.h5`) takes the real-time video from webcam as an input and predicts if the face landmarks in Region of Interest (ROI) is 'Mask' or 'No Mask' with real-time on screen accuracy.
 
@@ -31,8 +27,6 @@ Globally, the coronavirus stats says it has more than 16.3M confirmed cases and 
 India’s coronavirus cases are increasing in an unimaginable rate and is breaking the record in the highest single-day increase so far every new day.. The country’s tally rose to 14,35,453 and the toll stood at 32,771. India is now the third worst-affected country by the pandemic and has overtaken Italy, according to Johns Hopkins University.
 
 The World Health Organization said that new information showed that protective masks could be a barrier for potentially infectious droplets. The coronavirus primarily spreads through the transmission of respiratory droplets from infected people.On 5th day of June changed its guidelines about the use of protective face masks in public, saying that they must be worn at all places where physical distancing is not possible. The global health body had said in April that there was not enough evidence to show that healthy people should wear masks to shield themselves from the coronavirus.
-
-![](https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/blob/master/images/WHO.png)
 
 
 Link: [https://twitter.com/i/status/1268986094042992640](https://twitter.com/i/status/1268986094042992640)
@@ -50,14 +44,7 @@ Training: Here we’ll focus on loading our face mask detection dataset from dis
 
 Deployment: Once the face mask detector is trained, we can then move on to loading the mask detector, performing face detection, and then classifying each face as with_mask or without_mask
 
-![](https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/blob/master/images/face_mask_detection_phases.png)\
 
-
-### Dataset Resource:
-
-Link: https://drive.google.com/drive/folders/1FHPJRCab-cyLq8IVz83LkU71gOc7gTS8?usp=sharing
-
-![](https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/blob/master/images/face_mask_detection_dataset.jpg)
 
 
 ### Project structure
@@ -188,21 +175,13 @@ weighted avg       0.99      0.99      0.99       276
 
 ```
 
-## Accuracy/Loss Plot
 
-![](https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/blob/master/evaluation.png)\
-
-...
 ## To Do
 1. This approach reduces our computer vision pipeline to a single step — rather than applying face detection and then our face mask detector model, all we need to do is apply the object detector to give us bounding boxes for people both with_mask and without_mask in a single forward pass of the network.
 
 2. An integration of this project to a web app/android app.
 
 
-## Bug / Feature Request
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/issues/new) by including your search query and the expected result.
-
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/ikigai-aa/Face-Mask-Detector-using-MobileNetV2/issues/new). Please include sample queries and their corresponding results.
 
 
 ## Technologies Used
